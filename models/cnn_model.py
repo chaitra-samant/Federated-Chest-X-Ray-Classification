@@ -36,4 +36,5 @@ if __name__ == '__main__':
     print(model)
     x = torch.randn((1, 3, 128, 128))
     y = model(x)
-    print(y.shape)  # Should be [1, 2]
+
+    print(y.shape)  #  Should be [1, 2]
