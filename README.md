@@ -15,7 +15,7 @@ Federated learning enables the development of superior global models by aggregat
 
 Below image shows the comparisons across various models:
 
-![Model Comparison](results/plots/model-comparison.png)
+![Model Comparison](results/plots/model-comparision.png)
 
 ## Overview
 
