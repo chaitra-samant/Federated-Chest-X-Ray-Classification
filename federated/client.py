@@ -56,10 +56,11 @@ class FederatedClient:
     def save_model(self, round_idx=None):
         model_path = f'results/models/client_{self.client_id}_model.pt'
         torch.save(self.model.state_dict(), model_path)
-        # If desired, version by round: f'results/models/client_{self.client_id}_model_round{round_idx}.pt'
+        # If desired, version by round: f'results/models/client_{self.client_id}_model_round{round_idx}.pt'  
 
     def get_parameters(self):
         return {k: v.cpu() for k, v in self.model.state_dict().items()}
 
     def set_parameters(self, parameters):
+
         self.model.load_state_dict(parameters)
